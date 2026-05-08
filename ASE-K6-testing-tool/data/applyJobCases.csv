@@ -1,0 +1,9 @@
+caseName,jobId,coverLetter,tokenMode,expectedStatus,expectedCode
+complete_profile_apply,92,I am interested in this job.,valid,201,
+apply_same_job_again,58,I am applying again.,valid,409,duplicate_application
+invalid_job_id,999999,Invalid job test.,valid,404,job_not_found
+missing_job_id,,Missing job id test.,valid,404,job_not_found
+unauthorized_apply,28,No token test.,none,401,
+invalid_token_apply,38,Invalid token test.,invalid,401,
+empty_cover_letter,95,valid,201,
+malformed_job_id,abc,Malformed job id test.,valid,400,
