@@ -1,0 +1,1 @@
+export const BASE_URL = 'https://pathfinder-fqgwf0e6bvc2cmbq.southeastasia-01.azurewebsites.net';
