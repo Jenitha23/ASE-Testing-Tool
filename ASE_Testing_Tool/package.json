@@ -1,0 +1,25 @@
+{
+  "name": "ase-testing-tool",
+  "version": "1.0.0",
+  "description": "Pathfinder Platform E2E Test Suite",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug",
+    "test:ui": "npx playwright test --ui",
+    "report:open": "npx playwright show-report playwright-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.0.0",
+    "allure-playwright": "^2.10.0",
+    "typescript": "^5.3.0"
+  },
+  "scripts": {
+  "test": "npx playwright test",
+  "test:student": "npx playwright test tests/student-flow.spec.ts",
+  "test:dashboard": "npx playwright test && npx ts-node generate-dashboard.ts && start ASE_Test_Dashboard.html",
+  "test:student:dashboard": "npx playwright test tests/student-flow.spec.ts && npx ts-node generate-dashboard.ts && start ASE_Test_Dashboard.html",
+  "dashboard": "npx ts-node generate-dashboard.ts && start ASE_Test_Dashboard.html"
+}
+}
